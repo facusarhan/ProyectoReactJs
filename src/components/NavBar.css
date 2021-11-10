@@ -5,7 +5,7 @@
 }
 .nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     color: white;
     margin: 10px;
@@ -14,8 +14,15 @@ li{
     margin: 10px;
     
 }
+.icon{
+    margin: 30px;
+    width: 50px;
+}
 h1{
     color: white;
     background-color: black;
-    border-radius: 50%;
+    border-radius: 20%;
+}
+a{
+    color: white;
 }
