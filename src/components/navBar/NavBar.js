@@ -1,23 +1,25 @@
-import { IoMdBasket } from "react-icons/io";
-import './NavBar.css';
+import { Link } from 'react-router-dom'
+import { CartWidget } from '../CartWidget/CartWidget'
+import './NavBar.css'
 
 export const NavBar = () => {
+
     
     return (
-        <header className="mi-app">
-        <h1>Fudo</h1>
+    
+    <header className="header">
+        <Link to="/"><h1>Logo</h1></Link>
+
         <nav>
-            <ul className="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Tienda</a></li>
-                <li><a href="">Informacion</a></li>
-                <li>
-                    <a className="icon">
-                        <IoMdBasket/>
-                    </a>
-                </li>
+            <ul>
+                <li><Link to="productos/zapatillas">Zapatillas</Link></li>
+                <li><Link to="productos/remeras">Remeras</Link></li>
+                <li><Link to="productos/buzos">Buzos</Link></li>
             </ul>
         </nav>
+        
+        <Link to="cart"><CartWidget/></Link>
+        
     </header>
     )
 }

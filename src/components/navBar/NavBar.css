@@ -1,28 +1,27 @@
-.mi-app{
-    background-color: brown;
-    display: flex;
-    justify-content: space-around;
-}
-.nav{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+.header {
+    width: 100%;
+    background-color: lightblue;
     color: white;
-    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
-li{
-    margin: 10px;
+.h1{
+    font-size: 42px;
+    font-weight: 700;
+}
+.ul{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 0;
+}
+.li{
+font-weight: 700;
+text-transform: uppercase;
+padding: 16px;
+list-style: none;
+}
+       
     
-}
-.icon{
-    margin: 30px;
-    width: 50px;
-}
-h1{
-    color: white;
-    background-color: black;
-    border-radius: 20%;
-}
-a{
-    color: white;
-}

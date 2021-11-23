@@ -1,17 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import {NavBar} from './components/navBar/NavBar';
-import {ItemListContainer} from './components/ItemListContainer/itemListContainer';
+import {AppRouter} from './router/appRouter';
 
 
 
 function App() {
   return (
-
-    <div className="App">
+    <BrowserRouter>
+   
       <NavBar/>
-      <ItemListContainer/>
-    </div>
-  );
+      <AppRouter/>
+
+    </BrowserRouter>
+);
 }
 
 export default App;
