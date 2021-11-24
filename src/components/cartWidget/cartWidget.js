@@ -1,9 +1,8 @@
 import React from 'react'
 import { FaCartPlus } from 'react-icons/fa'
-import './CartWidget.css'
+import './cartWidget.scss'
 
 export const CartWidget = () => {
-
 
     return (
         <div>
