@@ -1,19 +1,28 @@
+import React from 'react';
+import  { NavBar }  from './components/navBar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
-import {NavBar} from './components/navBar/NavBar';
-import {AppRouter} from './router/appRouter';
-
-
+import { BrowserRouter } from 'react-router-dom';
+import { AppRouter } from './router/AppRouter';
+import { CartProvider } from './context/CartContext';
+import { DarkModeProvider } from './context/DarkModeContext';
 
 function App() {
-  return (
-    <BrowserRouter>
-   
-      <NavBar/>
-      <AppRouter/>
 
-    </BrowserRouter>
-);
+
+  return (
+
+    <DarkModeProvider>
+      <CartProvider>
+
+        <BrowserRouter>
+            <NavBar/>
+            <AppRouter/>   
+        </BrowserRouter>
+        
+      </CartProvider>
+    </DarkModeProvider>
+
+  );
 }
 
 export default App;
