@@ -4,7 +4,7 @@ export const stock = [
         price: 500,
         name: "Jordan1 High",
         desc: "chicago rojas blancas y negras",
-        img: "https://cdn.shopify.com/s/files/1/2358/2817/products/Wethenew-Sneakers-France-Air-Jordan-1-Mid-Chicago-Black-Toe-1_6819f763-d2d5-4df1-8fc2-c196e0d476cd_600x.png?v=1593771549",
+        img: "https://www.prend.es/wp-content/uploads/2020/11/air-jordan-1-retro-high-chicago-2013-white-black-varsity-red-332550-163-1_1.jpg",
         category: 'zapatillas',
         stock: 15
     },
