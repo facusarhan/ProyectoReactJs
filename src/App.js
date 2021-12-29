@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { AppRouter } from './router/AppRouter';
 import { CartProvider } from './context/CartContext';
 import { DarkModeProvider } from './context/DarkModeContext';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -17,7 +17,8 @@ function App() {
 
         <BrowserRouter>
             <NavBar/>
-            <AppRouter/>   
+            <AppRouter/>
+            <Footer/>   
         </BrowserRouter>
         
       </CartProvider>
